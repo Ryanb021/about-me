@@ -1,0 +1,21 @@
+h1 {
+  text-align: center;
+  background-color: white;
+  color: black;
+}
+p {
+  text-align: center
+}
+body {
+  background-color: gray;
+}
+main {
+  text-align: center;
+  color: black; 
+
+}
+footer {
+  text-align: center;
+  background-color: yellow;
+  color: red;
+}
