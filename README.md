@@ -9,13 +9,13 @@ I build an app with a direct and powerful purpose. It does all of the things tha
 
 ### Links and Resources
 
-*![Lighthouse Score](https://user-images.githubusercontent.com/120413183/214704355-7b593286-2b5b-423f-8e0d-21801652e185.png)
+*
 
 * Any Links you used as reference
 
 ### Lighthouse Accessibility Report Score
 
-* Provide a screenshot of your score after running a Lighthouse Accessibility report.
+* ![Lighthouse Score](https://user-images.githubusercontent.com/120413183/214704355-7b593286-2b5b-423f-8e0d-21801652e185.png)
 
 ### Reflections and Comments
 
