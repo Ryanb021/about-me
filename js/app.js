@@ -59,16 +59,28 @@ if (favGame === 'no' || favGame === 'n') {
   //console.log('Yes or No only damnit!!! Lost your chance.');
   alert('Yes or No only damnit!!! Lost your chance.');
 }
-let arcadeStick = prompt('Guess how many arcade sticks I have destroyed by playing Tekken 7. Choose from 1 to 10 only. Reminder that you only have 4 attempts.');
-if (arcadeStick === '5') {
-  //console.log('Amazing! You got it right!;');
-  alert('Amazing! You got it right!');
-} let attemptsRemaining = 4;
-for (let i = 0; i < attemptsRemaining; i++) {
-  console.log(`Wrong! You have only ${attemptsRemaining - i - 1} attempts remaining buddy!`);
-} while (arcadeStick !== 5) {
-  // eslint-disable-next-line no-undef
-  alert(`Wrong! You have ${attemptsRemaining - i - 1} attempts remaining! buddy`);
+
+let attemptsRemaining = 4;
+let score = 0;
+
+for (let i = 0; i <= attemptsRemaining; i++) {
+
+  console.log(attemptsRemaining);
+  console.log(i);
+
+  let arcadeStick = prompt('Guess how many arcade sticks I have destroyed by playing Tekken 7. Choose from 1 to 10 only. Reminder that you only have 4 attempts.');
+  if (arcadeStick === '5') {
+    console.log('Amazing! You got it right!;');
+    alert(`Amazing! You got it right! Score ${score}`);
+    score++;
+    break;
+
+  } else if (arcadeStick < 5) {
+    alert(`Too low! You have ${attemptsRemaining - i - 1} attempts remaining! buddy`);
+
+  } else if (arcadeStick > 5) {
+    alert(`Too high! You have ${attemptsRemaining - i - 1} attempts remaining! buddy`);
+  }
 }
 /*let attemptsRemaining = 4;
 let arcadeStick = 5;
