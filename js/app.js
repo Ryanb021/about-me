@@ -18,7 +18,7 @@ if (formerJob === 'yes' || formerJob === 'y') {
 let serviceStatus = prompt('Am I a Veteran or not? Yes or No only.').toLowerCase();
 if (serviceStatus === 'yes' || serviceStatus === 'y') {
   //console.log('You got that right!')
-  alert('You got that right');
+  alert('You got that right!');
 } else if (serviceStatus === 'no' || serviceStatus === 'n') {
   //console.log('Negative shipmate! I am a Veteran. US NAVY Veteran.');
   alert('Negative shipmate! I am a Veteran. US NAVY Veteran.');
@@ -59,21 +59,46 @@ if (favGame === 'no' || favGame === 'n') {
   //console.log('Yes or No only damnit!!! Lost your chance.');
   alert('Yes or No only damnit!!! Lost your chance.');
 }
-/*
-let attemptsRemaining = 4;
+let arcadeStick = prompt('Guess how many arcade sticks I have destroyed by playing Tekken 7. Choose from 1 to 10 only. Reminder that you only have 4 attempts.');
+if (arcadeStick === '5') {
+  //console.log('Amazing! You got it right!;');
+  alert('Amazing! You got it right!');
+} let attemptsRemaining = 4;
+for (let i = 0; i < attemptsRemaining; i++) {
+  console.log(`Wrong! You have only ${attemptsRemaining - i - 1} attempts remaining buddy!`);
+} while (arcadeStick !== 5) {
+  // eslint-disable-next-line no-undef
+  alert(`Wrong! You have ${attemptsRemaining - i - 1} attempts remaining! buddy`);
+}
+/*let attemptsRemaining = 4;
+let arcadeStick = 5;
+let userResponse = prompt('Guess how many arcade sticks I have destroyed by playing Tekken 7. Choose from 1 to 10 only. Reminder that you only have 4 attempts.');
+if (userResponse === arcadeStick) {
+  console.log('Amazing! You got it right buddy!');
+  alert('Amazing! You got it right buddy!');
+}
+} while (userResponse < arcadeStick || userResponse > arcadeStick) {
+  userResponse = prompt('Wrong! Guess a number again between 1 to 10 only!');
+}*/
+
+/*for (let i = 0; i < attemptsRemaining; i++) {
+  console.log(`You have only ${attemptsRemaining - i - 1} attempts remaining buddy!`);
+}
+*/
+/*let attemptsRemaining = 4;
 
 while (attemptsRemaining) {
   attemptsRemaining--;
   console.log(`You have ${attemptsRemaining} attempts remaining`);
 }
-
+*/
+/*
 let attempts = 7;
 
 for (let i = 0; i < attempts; i++) {
   console.log(`You have ${attempts - i -1} attempts remaining`);
 }
 */
-
 /*
 let score = 0;
 
@@ -105,4 +130,35 @@ for (let i =0; i < attemptsToGo; i++) {
     }
   }
 }
+*/
+let favFood = ['Tomahawk Steak', 'Pork Sinigang', 'Chicken Adobo', 'Lamb Chops'];
+
+for (let i = 0; i < favFood.length; i++) {
+  console.log(favFood[i]);
+}
+let try1 = prompt('Hello ' + username + '! Which of the following are my favorite foods? Just pick one: Chicken Adobo, Mongolian Barbecue, Lamb Chops, Tomahawk Steak, Pork Sinigang, Spaghetti, Fried Chicken');
+
+if (favFood.includes(try1)) {
+  alert('Good golly Miss Molly! I do like ' + try1);
+} else {
+  alert('Nope! You got that wrong buddy.');
+}
+let try2 = false;
+
+for (let i = 0; i < favFood.length; i++) {
+  if (try1 === favFood[i]) {
+    try2 = true;
+  }
+}
+
+if (try2) {
+  alert('Good Job!');
+} else {
+  alert('Try again!');
+}
+/*for (let i = 0; i < 3; i++) {
+  console.log("hello!");
+}
+
+console.log(favoriteFoods[2]);
 */
