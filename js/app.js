@@ -156,9 +156,3 @@ if (try2) {
 } else {
   alert('Try again!');
 }
-/*for (let i = 0; i < 3; i++) {
-  console.log("hello!");
-}
-
-console.log(favoriteFoods[2]);
-*/
