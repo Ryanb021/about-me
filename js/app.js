@@ -29,29 +29,33 @@ function priorService {
 
   let serviceStatus = prompt('Am I a Veteran or not? Yes or No only.').toLowerCase();
   if (serviceStatus === 'yes' || serviceStatus === 'y') {
-  //console.log('You got that right!')
+    //console.log('You got that right!')
     alert('You got that right!');
   } else if (serviceStatus === 'no' || serviceStatus === 'n') {
-  //console.log('Negative shipmate! I am a Veteran. US NAVY Veteran.');
+    //console.log('Negative shipmate! I am a Veteran. US NAVY Veteran.');
     alert('Negative shipmate! I am a Veteran. US NAVY Veteran.');
   } else {
-  //console.log('Come on man! Yes or No only.');
+    //console.log('Come on man! Yes or No only.');
     alert('Come on man! Yes or No only. Moving on then.');
   }
 };
 priorService();
 
-let stationCountry = prompt('So now that you know I used to be in the NAVY, will you believe me if I said I was stationed in Japan for 15 years? Yes or No again.').toLowerCase();
-if (stationCountry === 'yes' || stationCountry === 'y') {
-  //console.log('Yes you are right. I love Japan.');
-  alert('Yes you are right. I love Japan.');
-} else if (stationCountry === 'no' || stationCountry === 'n') {
-  //console.log('Incorrect my friend.');
-  alert('Incorrect my friend.');
-} else {
-  //console.log('Yes or No only my friend.');
-  alert('Yes or No only my friend. Move along now.');
+function oldStation() {
+  let stationCountry = prompt('So now that you know I used to be in the NAVY, will you believe me if I said I was stationed in Japan for 15 years? Yes or No again.').toLowerCase();
+  if (stationCountry === 'yes' || stationCountry === 'y') {
+    //console.log('Yes you are right. I love Japan.');
+    alert('Yes you are right. I love Japan.');
+  } else if (stationCountry === 'no' || stationCountry === 'n') {
+    //console.log('Incorrect my friend.');
+    alert('Incorrect my friend.');
+  } else {
+    //console.log('Yes or No only my friend.');
+    alert('Yes or No only my friend. Move along now.');
+  }
 }
+oldStation();
+
 let favSport = prompt('In my spare time, I play sports. And Curling for me is the best sports of all time, Agree? Yes or No only?').toLowerCase();
 if (favSport === 'yes' || favSport === 'y') {
   //console.log('You must be out of your mind jack!');
