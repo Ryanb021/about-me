@@ -25,17 +25,22 @@ function oldJob() {
 }
 oldJob();
 
-let serviceStatus = prompt('Am I a Veteran or not? Yes or No only.').toLowerCase();
-if (serviceStatus === 'yes' || serviceStatus === 'y') {
+function priorService {
+
+  let serviceStatus = prompt('Am I a Veteran or not? Yes or No only.').toLowerCase();
+  if (serviceStatus === 'yes' || serviceStatus === 'y') {
   //console.log('You got that right!')
-  alert('You got that right!');
-} else if (serviceStatus === 'no' || serviceStatus === 'n') {
+    alert('You got that right!');
+  } else if (serviceStatus === 'no' || serviceStatus === 'n') {
   //console.log('Negative shipmate! I am a Veteran. US NAVY Veteran.');
-  alert('Negative shipmate! I am a Veteran. US NAVY Veteran.');
-} else {
+    alert('Negative shipmate! I am a Veteran. US NAVY Veteran.');
+  } else {
   //console.log('Come on man! Yes or No only.');
-  alert('Come on man! Yes or No only. Moving on then.');
-}
+    alert('Come on man! Yes or No only. Moving on then.');
+  }
+};
+priorService();
+
 let stationCountry = prompt('So now that you know I used to be in the NAVY, will you believe me if I said I was stationed in Japan for 15 years? Yes or No again.').toLowerCase();
 if (stationCountry === 'yes' || stationCountry === 'y') {
   //console.log('Yes you are right. I love Japan.');
@@ -108,7 +113,7 @@ if (userResponse === arcadeStick) {
 }
 */
 /*let attemptsRemaining = 4;
- 
+
 while (attemptsRemaining) {
   attemptsRemaining--;
   console.log(`You have ${attemptsRemaining} attempts remaining`);
@@ -116,19 +121,19 @@ while (attemptsRemaining) {
 */
 /*
 let attempts = 7;
- 
+
 for (let i = 0; i < attempts; i++) {
   console.log(`You have ${attempts - i -1} attempts remaining`);
 }
 */
 /*
 let score = 0;
- 
+
 let myFavColors = ['blue', 'gold', 'cream'];
 let userResponse = 'orange';
- 
+
 let attemptsThatRemain = 3;
- 
+
 while (attemptsThatRemain) {
   attemptsThatRemain--;
   console.log(`I'm in the loop. You have ${attemptsThatRemain} attempts remaining.`);
@@ -139,9 +144,9 @@ while (attemptsThatRemain) {
     }
   }
 }
- 
+
 let attemptsToGo = 5;
- 
+
 for (let i =0; i < attemptsToGo; i++) {
   console.log(`User has ${attemptsToGo - i -1} attempts remaining`);
   for (let j = 0; j < myFavColors.length; j++) {
