@@ -10,17 +10,21 @@ function helloThere() {
 }
 helloThere();
 
-let formerJob = prompt(username + ', will you believe me if I said I used to be a Radio Jock? Yes or No only.').toLowerCase();
-if (formerJob === 'yes' || formerJob === 'y') {
-  //console.log('Damn right! I used to be a Radio Jock!');
-  alert('Damn right! I used to be a Radio Jock!');
-} else if (formerJob === 'no' || formerJob === 'n') {
-  //console.log('Wrong! Try again. I am sure you know the answer my friend.');
-  alert('Wrong there my friend. I used to be a Radio Jock.');
-} else {
-  //console.log('Yes or No only buddy.');
-  alert('Come on it is so simple. Yes or No only. Missed your chance.');
+function oldJob() {
+  let formerJob = prompt('username' + ', will you believe me if I said I used to be a Radio Jock? Yes or No only.').toLowerCase();
+  if (formerJob === 'yes' || formerJob === 'y') {
+    //console.log('Damn right! I used to be a Radio Jock!');
+    alert('Damn right! I used to be a Radio Jock!');
+  } else if (formerJob === 'no' || formerJob === 'n') {
+    //console.log('Wrong! Try again. I am sure you know the answer my friend.');
+    alert('Wrong there my friend. I used to be a Radio Jock.');
+  } else {
+    //console.log('Yes or No only buddy.');
+    alert('Come on it is so simple. Yes or No only. Missed your chance.');
+  }
 }
+oldJob();
+
 let serviceStatus = prompt('Am I a Veteran or not? Yes or No only.').toLowerCase();
 if (serviceStatus === 'yes' || serviceStatus === 'y') {
   //console.log('You got that right!')
@@ -32,7 +36,7 @@ if (serviceStatus === 'yes' || serviceStatus === 'y') {
   //console.log('Come on man! Yes or No only.');
   alert('Come on man! Yes or No only. Moving on then.');
 }
-let stationCountry = prompt('So ' + username + ', now that you know I used to be in the NAVY, will you believe me if I said I was stationed in Japan for 15 years? Yes or No again.').toLowerCase();
+let stationCountry = prompt('So now that you know I used to be in the NAVY, will you believe me if I said I was stationed in Japan for 15 years? Yes or No again.').toLowerCase();
 if (stationCountry === 'yes' || stationCountry === 'y') {
   //console.log('Yes you are right. I love Japan.');
   alert('Yes you are right. I love Japan.');
@@ -104,7 +108,7 @@ if (userResponse === arcadeStick) {
 }
 */
 /*let attemptsRemaining = 4;
-
+ 
 while (attemptsRemaining) {
   attemptsRemaining--;
   console.log(`You have ${attemptsRemaining} attempts remaining`);
@@ -112,19 +116,19 @@ while (attemptsRemaining) {
 */
 /*
 let attempts = 7;
-
+ 
 for (let i = 0; i < attempts; i++) {
   console.log(`You have ${attempts - i -1} attempts remaining`);
 }
 */
 /*
 let score = 0;
-
+ 
 let myFavColors = ['blue', 'gold', 'cream'];
 let userResponse = 'orange';
-
+ 
 let attemptsThatRemain = 3;
-
+ 
 while (attemptsThatRemain) {
   attemptsThatRemain--;
   console.log(`I'm in the loop. You have ${attemptsThatRemain} attempts remaining.`);
@@ -135,9 +139,9 @@ while (attemptsThatRemain) {
     }
   }
 }
-
+ 
 let attemptsToGo = 5;
-
+ 
 for (let i =0; i < attemptsToGo; i++) {
   console.log(`User has ${attemptsToGo - i -1} attempts remaining`);
   for (let j = 0; j < myFavColors.length; j++) {
@@ -154,7 +158,7 @@ let favFood = ['Tomahawk Steak', 'Pork Sinigang', 'Chicken Adobo', 'Lamb Chops']
 for (let i = 0; i < favFood.length; i++) {
   console.log(favFood[i]);
 }
-let try1 = prompt('Hello ' + username + '! Which of the following are my favorite foods? Just pick one: Chicken Adobo, Mongolian Barbecue, Lamb Chops, Tomahawk Steak, Pork Sinigang, Spaghetti, Fried Chicken');
+let try1 = prompt('Hello there! Which of the following are my favorite foods? Just pick one: Chicken Adobo, Mongolian Barbecue, Lamb Chops, Tomahawk Steak, Pork Sinigang, Spaghetti, Fried Chicken');
 
 if (favFood.includes(try1)) {
   alert('Good golly Miss Molly! I do like ' + try1);
