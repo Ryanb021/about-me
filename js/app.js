@@ -57,31 +57,34 @@ function oldStation() {
 oldStation();
 
 function mySports() {
-let favSport = prompt('In my spare time, I play sports. And Curling for me is the best sports of all time, Agree? Yes or No only?').toLowerCase();
-if (favSport === 'yes' || favSport === 'y') {
-  //console.log('You must be out of your mind jack!');
-  alert('You must be out of your mind jack!');
-} else if (favSport === 'no' || favSport === 'n') {
-  //console.log('Damn right it's not! Best sports of all time for me is Basketball shipmate!');
-  alert('Damn right it is not! Best sports of all time for me is Basketball shipmate!');
-} else {
-  //console.log('Yes or No only my friend.');
-  alert('OMG! Yes or No only buddy. Ok moving on.');
+  let favSport = prompt('In my spare time, I play sports. And Curling for me is the best sports of all time, Agree? Yes or No only?').toLowerCase();
+  if (favSport === 'yes' || favSport === 'y') {
+    //console.log('You must be out of your mind jack!');
+    alert('You must be out of your mind jack!');
+  } else if (favSport === 'no' || favSport === 'n') {
+    //console.log('Damn right it's not! Best sports of all time for me is Basketball shipmate!');
+    alert('Damn right it is not! Best sports of all time for me is Basketball shipmate!');
+  } else {
+    //console.log('Yes or No only my friend.');
+    alert('OMG! Yes or No only buddy. Ok moving on.');
   }
 }
 mySports();
- 
-let favGame = prompt('Another hobby I do in my spare time is play fighting video games. Virtua Fighter is my favorite fighting game. Yes or No?').toLowerCase();
-if (favGame === 'no' || favGame === 'n') {
-  //console.log('Yup! That is not it. Tekken is my favorite fighting game.');
-  alert('Yup! That is not it. Tekken is my favorite fighting game.');
-} else if (favGame === 'yes' || favGame === 'y') {
-  //console.log('You really do not know me eh?');
-  alert('You really do not know me eh?');
-} else {
-  //console.log('Yes or No only damnit!!! Lost your chance.');
-  alert('Yes or No only damnit!!! Lost your chance.');
+
+function faveTekken() {
+  let favGame = prompt('Another hobby I do in my spare time is play fighting video games. Virtua Fighter is my favorite fighting game. Yes or No?').toLowerCase();
+  if (favGame === 'no' || favGame === 'n') {
+    //console.log('Yup! That is not it. Tekken is my favorite fighting game.');
+    alert('Yup! That is not it. Tekken is my favorite fighting game.');
+  } else if (favGame === 'yes' || favGame === 'y') {
+    //console.log('You really do not know me eh?');
+    alert('You really do not know me eh?');
+  } else {
+    //console.log('Yes or No only damnit!!! Lost your chance.');
+    alert('Yes or No only damnit!!! Lost your chance.');
+  }
 }
+faveTekken();
 
 let attemptsRemaining = 4;
 let score = 0;
