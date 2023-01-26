@@ -112,6 +112,34 @@ function arcadeGames() {
 }
 arcadeGames();
 
+function goodFood() {
+let favFood = ['Tomahawk Steak', 'Pork Sinigang', 'Chicken Adobo', 'Lamb Chops'];
+
+for (let i = 0; i < favFood.length; i++) {
+  console.log(favFood[i]);
+}
+let try1 = prompt('Hello there! Which of the following are my favorite foods? Just pick one: Chicken Adobo, Mongolian Barbecue, Lamb Chops, Tomahawk Steak, Pork Sinigang, Spaghetti, Fried Chicken');
+
+if (favFood.includes(try1)) {
+  alert('Good golly Miss Molly! I do like ' + try1);
+} else {
+  alert('Nope! You got that wrong buddy.');
+}
+let try2 = false;
+
+for (let i = 0; i < favFood.length; i++) {
+  if (try1 === favFood[i]) {
+    try2 = true;
+  }
+}
+if (try2) {
+  alert('Good Job!');
+} else {
+  alert('Try again!');
+}
+}
+goodFood();
+
 /*let attemptsRemaining = 4;
 let arcadeStick = 5;
 let userResponse = prompt('Guess how many arcade sticks I have destroyed by playing Tekken 7. Choose from 1 to 10 only. Reminder that you only have 4 attempts.');
@@ -173,28 +201,3 @@ for (let i =0; i < attemptsToGo; i++) {
   }
 }
 */
-let favFood = ['Tomahawk Steak', 'Pork Sinigang', 'Chicken Adobo', 'Lamb Chops'];
-
-for (let i = 0; i < favFood.length; i++) {
-  console.log(favFood[i]);
-}
-let try1 = prompt('Hello there! Which of the following are my favorite foods? Just pick one: Chicken Adobo, Mongolian Barbecue, Lamb Chops, Tomahawk Steak, Pork Sinigang, Spaghetti, Fried Chicken');
-
-if (favFood.includes(try1)) {
-  alert('Good golly Miss Molly! I do like ' + try1);
-} else {
-  alert('Nope! You got that wrong buddy.');
-}
-let try2 = false;
-
-for (let i = 0; i < favFood.length; i++) {
-  if (try1 === favFood[i]) {
-    try2 = true;
-  }
-}
-
-if (try2) {
-  alert('Good Job!');
-} else {
-  alert('Try again!');
-}
