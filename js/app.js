@@ -1,9 +1,15 @@
 'use strict';
-console.log('Hi there!');
-alert('Hi there!');
-let username = prompt('Will you please introduce yourself?'); {
-  alert('Hello ' + username + '! Welcome to my page and see if you know a little bit about me.');
+
+function helloThere() {
+
+  console.log('Hi there!');
+  alert('Hi there!');
+  let username = prompt('Will you please introduce yourself?'); {
+    alert('Hello ' + username + '! Welcome to my page and see if you know a little bit about me.');
+  }
 }
+helloThere();
+
 let formerJob = prompt(username + ', will you believe me if I said I used to be a Radio Jock? Yes or No only.').toLowerCase();
 if (formerJob === 'yes' || formerJob === 'y') {
   //console.log('Damn right! I used to be a Radio Jock!');
