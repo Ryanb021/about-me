@@ -7,9 +7,9 @@ I build an app with a direct and powerful purpose. It does all of the things tha
 
 ### Author: Ryan Bagan
 
-### Links and Resources
+### Contributor
 
-*
+* https://github.com/KamWatts
 
 * Any Links you used as reference
 
