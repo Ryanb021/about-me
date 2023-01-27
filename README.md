@@ -7,9 +7,9 @@ I build an app with a direct and powerful purpose. It does all of the things tha
 
 ### Author: Ryan Bagan
 
-### Links and Resources
+### Contributor
 
-*
+* https://github.com/KamWatts
 
 * Any Links you used as reference
 
@@ -17,6 +17,8 @@ I build an app with a direct and powerful purpose. It does all of the things tha
 
 * ![Lighthouse Score](https://user-images.githubusercontent.com/120413183/214704355-7b593286-2b5b-423f-8e0d-21801652e185.png)
 * ![Lighthouse2](https://user-images.githubusercontent.com/120413183/214903705-0fa6818a-54da-4b84-b91e-700702e9c393.png)
+*![lighthouse3](https://user-images.githubusercontent.com/120413183/215025705-54ac5544-63a6-41e7-9f56-9a79bc6eed8d.png)
+
 
 
 ### Reflections and Comments
