@@ -120,6 +120,30 @@ function arcadeGames() {
 
 arcadeGames();
 
+let food = ['tomahawk steak', 'pork sinigang', 'chicken adobo'];
+let favFood = prompt('Which of the following are my favorite foods? Just pick one: Chicken Adobo, Mongolian Barbecue, Lamb Chops, Tomahawk Steak, Pork Sinigang, Spaghetti, Fried Chicken').toLowerCase();
+let guessAttempts = 6;
+let userRight = false;
+
+while (guessAttempts) {
+  for (let i = 0; i < food.length; i++) {
+    if (favFood === food[i]) {
+      userRight = true;
+    }
+  }
+  if (userRight === true) {
+    score++;
+    userRight = false;
+    alert('Nice! You got it right my friend.');
+    alert(`And your final score is ${score} out of 7!`);
+    break;
+  } else {
+    favFood = prompt('Guess again. Just pick one: Chicken Adobo, Mongolian Barbecue, Lamb Chops, Tomahawk Steak, Pork Sinigang, Spaghetti, Fried Chicken');
+  }
+  guessAttempts--;
+  alert(`You have ${guessAttempts} attempts left.`);
+}
+
 /*let attemptsRemaining = 3;
   for (let i = 0; i <= attemptsRemaining; i++) {
 
@@ -152,30 +176,6 @@ arcadeGames();
   alert('The right answer is 5');
 }*/
 
-
-let food = ['tomahawk steak', 'pork sinigang', 'chicken adobo'];
-let favFood = prompt('Which of the following are my favorite foods? Just pick one: Chicken Adobo, Mongolian Barbecue, Lamb Chops, Tomahawk Steak, Pork Sinigang, Spaghetti, Fried Chicken').toLowerCase();
-let guessAttempts = 6;
-let userRight = false;
-
-while (guessAttempts) {
-  for (let i = 0; i < food.length; i++) {
-    if (favFood === food[i]) {
-      userRight = true;
-    }
-  }
-  if (userRight === true) {
-    score++;
-    userRight = false;
-    alert('Nice! You got it right my friend.');
-    alert(`And your final score is ${score} out of 7!`);
-    break;
-  } else {
-    favFood = prompt('Guess again. Just pick one: Chicken Adobo, Mongolian Barbecue, Lamb Chops, Tomahawk Steak, Pork Sinigang, Spaghetti, Fried Chicken');
-  }
-  guessAttempts--;
-  alert(`You have ${guessAttempts} attempts left.`);
-}
 //alert(`Correct answers can be one of the following: ${food}. And your final score is ${score} out of 7!`);
 /*function goodFood() {
   let favFood = ['Tomahawk Steak', 'Pork Sinigang', 'Chicken Adobo', 'Lamb Chops'];
