@@ -153,15 +153,12 @@ arcadeGames();
 }*/
 
 
-let food = ['Tomahawk Steak', 'Pork Sinigang', 'Chicken Adobo', 'Lamb Chops'];
+let food = ['tomahawk steak', 'pork sinigang', 'chicken adobo'];
 let favFood = prompt('Which of the following are my favorite foods? Just pick one: Chicken Adobo, Mongolian Barbecue, Lamb Chops, Tomahawk Steak, Pork Sinigang, Spaghetti, Fried Chicken').toLowerCase();
 let guessAttempts = 6;
 let userRight = false;
 
 while (guessAttempts) {
-  guessAttempts--;
-  alert(`you have ${guessAttempts} attempts left.`);
-
   for (let i = 0; i < food.length; i++) {
     if (favFood === food[i]) {
       userRight = true;
@@ -171,12 +168,15 @@ while (guessAttempts) {
     score++;
     userRight = false;
     alert('Nice! You got it right my friend.');
+    alert(`And your final score is ${score} out of 7!`);
     break;
-  } else if (guessAttempts > 0) {
-    favFood = prompt('Guess again.');
+  } else {
+    favFood = prompt('Guess again. Just pick one: Chicken Adobo, Mongolian Barbecue, Lamb Chops, Tomahawk Steak, Pork Sinigang, Spaghetti, Fried Chicken');
   }
-  alert(`Answers can be ${food} & your final score is ${score} out of 7!`);
+  guessAttempts--;
+  alert(`You have ${guessAttempts} attempts left.`);
 }
+//alert(`Correct answers can be one of the following: ${food}. And your final score is ${score} out of 7!`);
 /*function goodFood() {
   let favFood = ['Tomahawk Steak', 'Pork Sinigang', 'Chicken Adobo', 'Lamb Chops'];
 
