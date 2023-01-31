@@ -1,5 +1,5 @@
 # about-me
-# LAB - 02
+# LAB - 02 and LAB 06
 
 # [Live Link](https://ryanb021.github.io/about-me/)
 
